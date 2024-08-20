@@ -27,6 +27,8 @@ export type  TasksStateType = {
 type PropsType = {
     demo?: boolean
 }
+console.log();
+
 
 function App({demo = false}: PropsType) {
     let status = useSelector<AppRootStateType, RequestStatusType>(state => state.app.status)
