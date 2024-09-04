@@ -27,7 +27,7 @@ export type  TasksStateType = {
 type PropsType = {
     demo?: boolean
 }
-console.log();
+
 
 
 function App({demo = false}: PropsType) {
