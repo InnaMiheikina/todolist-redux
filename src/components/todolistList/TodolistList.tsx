@@ -25,7 +25,7 @@ export const TodolistList:React.FC<todolistListType> = ({demo=false}:todolistLis
             return
         }
         dispatch(setTodolistTC())
-    }, [])
+    }, [demo, dispatch, isLoggedIn])
 
     if(!isLoggedIn){
         return <Navigate to={'/login'} />

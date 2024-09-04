@@ -14,7 +14,7 @@ export type TaskTypeProps = {
 const Task = (props:TaskTypeProps) => {
 
     let dispatch = useAppDispatch()
-    let {id, title: title, status} = props.task
+    let {id, title, status} = props.task
 
     const onRemoveHandler = useCallback(() => {
         dispatch(deleteTasksTC(id, props.todolistId))
